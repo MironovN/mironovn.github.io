@@ -1,1 +1,143 @@
-<h1>Test<h1>
+<table>
+  <tr>
+    <td onclick="fieldClick('x11', this)"></td>
+    <td onclick="fieldClick('x12', this)"></td>
+    <td onclick="fieldClick('x13', this)"></td>
+  </tr>
+  <tr>
+    <td onclick="fieldClick('x21', this)"></td>
+    <td onclick="fieldClick('x22', this)"></td>
+    <td onclick="fieldClick('x23', this)"></td>
+  </tr>
+  <tr>
+    <td onclick="fieldClick('x31', this)"></td>
+    <td onclick="fieldClick('x32', this)"></td>
+    <td onclick="fieldClick('x33', this)"></td>
+  </tr>
+</table>
+
+<style>
+td {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 80px;
+  font-family: Arial, sans-serif;
+  border: 1px grey solid;
+  background-color: white;
+  cursor: pointer;
+}
+</style>
+
+<script>
+var x1 = 0;var x2 = 0;var x3 = 0;
+var x4 = 0;var x5 = 0;var x6 = 0;
+var x7 = 0;var x8 = 0;var x9 = 0;
+//Если переменная = 1-крестики, 2-нолики
+var player = 1
+
+var isend = false
+
+function KO (x1,x2,x3,x4,x5,x6,x7,x8,x9) {
+if (x1 == 1 && x2 == 1 && x3 == 1 || x4 == 1 && x5 == 1 && x6 == 1 || x7 == 1 && x8 == 1 && x9 == 1 || x1 == 1 && x4 == 1 && x7 == 1 || x2 == 1 && x5 == 1 && x8 == 1 || x3 == 1 && x6 == 1 && x9 == 1 || x1 == 1 && x5 == 1 && x9 == 1 || x3 == 1 && x5 ==1 && x7 == 1) {
+  return 'Крестики победили' 
+  }
+  if (x1 == 2 && x2 == 2 && x3 == 2 || x4 == 2 && x5 == 2 && x6 == 2 || x7 == 2 && x8 == 2 && x9 == 2 || x1 == 2 && x4 == 2 && x7 == 2 || x2 == 2 && x5 == 2 && x8 == 2 || x3 == 2 && x6 == 2 && x9 == 2 || x1 == 2 && x5 == 2 && x9 == 2 || x3 == 2 && x5 ==2 && x7 == 2) {
+  return 'Нолики победили'
+  }
+}
+
+// Срабатывает при клике на поле
+function fieldClick(field, element) {
+  if (isend) {
+  return
+  }
+	if (player == 1) {
+    if (field == 'x11') {
+      x1 = 1
+    }
+    if (field == 'x12') {
+      x2 = 1
+    }
+    if (field == 'x13') {
+      x3 = 1
+    }
+    if (field == 'x21') {
+      x4 = 1
+    }
+    if (field == 'x22') {
+      x5 = 1
+    }
+    if (field == 'x23') {
+      x6 = 1
+    }
+    if (field == 'x31') {
+      x7 = 1
+    }
+    if (field == 'x32') {
+      x8 = 1
+    }
+    if (field == 'x33') {
+      x9 = 1
+    }
+    fillCross(element)
+    player = 2
+   } else {
+    if (field == 'x11') {
+      x1 = 2
+    }
+    if (field == 'x12') {
+      x2 = 2
+    }
+    if (field == 'x13') {
+      x3 = 2
+    }
+    if (field == 'x21') {
+      x4 = 2
+    }
+    if (field == 'x22') {
+      x5 = 2
+    }
+    if (field == 'x23') {
+      x6 = 2
+    }
+    if (field == 'x31') {
+      x7 = 2
+    }
+    if (field == 'x32') {
+      x8 = 2
+    }
+    if (field == 'x33') {
+      x9 = 2
+    }
+    fillZero(element)
+    player = 1
+   
+   }
+   
+   var result = KO(x1,x2,x3,x4,x5,x6,x7,x8,x9)
+ if (result == 'Крестики победили' || result == 'Нолики победили')  {
+ alert (result)
+ isend = true
+ } else {
+ if (x1 != 0 && x2 != 0 && x3 != 0 && x4 != 0 && x5 != 0 && x6 != 0 && x7 != 0 && x8 != 0 && x9 != 0 ) {
+ alert ('Ничья')
+ isend = true
+  }
+ }
+
+}
+
+
+// Заполняет поле крестиком
+function fillCross(element) {
+  element.textContent = '×';
+}
+
+// Заполняет поле ноликом
+function fillZero(element) {
+  element.textContent = 'o';
+}
+
+</script>
