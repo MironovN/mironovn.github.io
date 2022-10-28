@@ -1,172 +1,93 @@
-<table>
-  <tr>
-    <td onclick="fieldClick('x11', this)"></td>
-    <td onclick="fieldClick('x12', this)"></td>
-    <td onclick="fieldClick('x13', this)"></td>
-  </tr>
-  <tr>
-    <td onclick="fieldClick('x21', this)"></td>
-    <td onclick="fieldClick('x22', this)"></td>
-    <td onclick="fieldClick('x23', this)"></td>
-  </tr>
-  <tr>
-    <td onclick="fieldClick('x31', this)"></td>
-    <td onclick="fieldClick('x32', this)"></td>
-    <td onclick="fieldClick('x33', this)"></td>
-  </tr>
-</table>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="styles/css1.css" rel="stylesheet">
+		<title>HM: долгий и тернистый путь</title>
+		<link rel="shortcut icon" href="top.png" type="image/png">
+	</head>
+	
+	<script type="text/javascript" src="script/script.js"></script>
+	
+	<body>
+	<div id="map">
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1be8ba617beb25cea09e699e7b1397151984d18c6cea0636a65cb1cf15a498ad&amp;lang=ru_RU&amp;scroll=false"></script>
+	</div>
+	<input type="image" onClick="scrollButton1()" src="images/arrow.png" id="scroll_bottom1">
+	<input type="image" onClick="scrollButton2()" src="images/arrow1.png" id="scroll_bottom2">
+	
+	<header>
+		<ol class="disp" align="center"> 
+			<li><a href="gall.html" class="animB">ГАЛЛЕРЕЯ</a></li>
+  			<li><a href="https://github.com/MironovN/mironovn.github.io" title="Крестики-нолики" target="_blank" class="animB">X/O</a></li>
+			<li><a href=""> <img src=images/MainLogo.png class="imgA"> </a></li>
+ 			<li><button onClick="cont()" class="animB">КОНТАКТЫ</button></li>
+  			<li><a href="" class="animB">ИНФОРМАЦИЯ</a></li>
+		</ol>
+	</header>
 
-<style>
-td {
-  height: 100px;
-  width: 100px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 80px;
-  font-family: Arial, sans-serif;
-  border: 1px grey solid;
-  background-color: white;
-  cursor: pointer;
-}
-</style>
+	<div class="decblock deckblockpos1"></div>
+	<div class="decblock deckblockpos2"></div>
+	<div class="decblock deckblockpos3"></div>
+	<div class="decblock deckblockpos4"></div>
+	<div class="decblock deckblockpos5"></div>
+	<div class="decblock deckblockpos6"></div>
+	<div class="decblock deckblockpos7"></div>
 
-<script>
-var x1 = 0;var x2 = 0;var x3 = 0;
-var x4 = 0;var x5 = 0;var x6 = 0;
-var x7 = 0;var x8 = 0;var x9 = 0;
-//Если переменная = 1-крестики, 2-нолики
-var player = 1
+	<div class="blockA">
+		<div class="blockV">
+			<video autoplay loop muted frameborder="0">
+				<source src="2_123.mp4">
+			</video>
+		</div>
+	</div>
 
-var isend = false
+	<div class="blockT">
+		<p align=left class="txtm">
+			<a href="" class="txtB">узнайте</a> обо мне,<br>
+			выходите на <button href="" onClick="cont()" class="txtB">связь</button>,<br>
+			изучите <button onClick="gall()" class="txtB">галлерею</button> моих работ,<br>
+			сыграйте в <a class="txtB"https://github.com/MironovN/mironovn.github.io" target="_blank">игру</a>.<br>
+		</p>
+	</div>
 
-function KO (x1,x2,x3,x4,x5,x6,x7,x8,x9) {
-if (x1 == 1 && x2 == 1 && x3 == 1 || x4 == 1 && x5 == 1 && x6 == 1 || x7 == 1 && x8 == 1 && x9 == 1 || x1 == 1 && x4 == 1 && x7 == 1 || x2 == 1 && x5 == 1 && x8 == 1 || x3 == 1 && x6 == 1 && x9 == 1 || x1 == 1 && x5 == 1 && x9 == 1 || x3 == 1 && x5 ==1 && x7 == 1) {
-  return 'Крестики победили' 
-  }
-  if (x1 == 2 && x2 == 2 && x3 == 2 || x4 == 2 && x5 == 2 && x6 == 2 || x7 == 2 && x8 == 2 && x9 == 2 || x1 == 2 && x4 == 2 && x7 == 2 || x2 == 2 && x5 == 2 && x8 == 2 || x3 == 2 && x6 == 2 && x9 == 2 || x1 == 2 && x5 == 2 && x9 == 2 || x3 == 2 && x5 ==2 && x7 == 2) {
-  return 'Нолики победили'
-  }
-}
+	<p align=left class="partner">Сотрудничаю</p>
+	<div class="block3">
+			<a href="https://vk.com/profkomngtu" target="_blank"><img src="images/pb.png" align="right" height=270px></a>
+	</div>
+	<div class="block4">
+			<a href="https://vk.com/profburo_irit" target="_blank"><img src="images/pbi.png" align="right" height=270px></a>
+	</div>
+	
+	<p align=left class="gallery">Галлерея</p>
+	<div id="gallM"></div>
+	<div id="gall">
+		<ol>
+			<li><img src="images/1.png"></li>
+			<li><img src="images/2.png"></li>
+			<li><img src="images/3.png"></li>
+			<li><img src="images/5.png"></li>
+		</ol>
+		<a href="gall.html" class="more txtB" align=right>больше</a>
+	</div>
+	<div id="gallM"></div>
+	</body>
 
-// Срабатывает при клике на поле
-function fieldClick(field, element) {
-  if (isend) {
-  return
-  }
-  if (field == 'x11' && x1 != 0) {
-  return
-  }
-  if (field == 'x12' && x2 != 0) {
-  return
-  }
-  if (field == 'x13' && x3 != 0) {
-  return
-  }
-  if (field == 'x21' && x4 != 0) {
-  return
-  }
-  if (field == 'x22' && x5 != 0) {
-  return
-  }
-  if (field == 'x23' && x6 != 0) {
-  return
-  }
-  if (field == 'x31' && x7 != 0) {
-  return
-  }
-  if (field == 'x32' && x8 != 0) {
-  return
-  }
-  if (field == 'x33' && x9 != 0) {
-  return
-  }
-  
-  
-	if (player == 1) {
-    if (field == 'x11') {
-      x1 = 1
-    }
-    if (field == 'x12') {
-      x2 = 1
-    }
-    if (field == 'x13') {
-      x3 = 1
-    }
-    if (field == 'x21') {
-      x4 = 1
-    }
-    if (field == 'x22') {
-      x5 = 1
-    }
-    if (field == 'x23') {
-      x6 = 1
-    }
-    if (field == 'x31') {
-      x7 = 1
-    }
-    if (field == 'x32') {
-      x8 = 1
-    }
-    if (field == 'x33') {
-      x9 = 1
-    }
-    fillCross(element)
-    player = 2
-   } else {
-    if (field == 'x11') {
-      x1 = 2
-    }
-    if (field == 'x12') {
-      x2 = 2
-    }
-    if (field == 'x13') {
-      x3 = 2
-    }
-    if (field == 'x21') {
-      x4 = 2
-    }
-    if (field == 'x22') {
-      x5 = 2
-    }
-    if (field == 'x23') {
-      x6 = 2
-    }
-    if (field == 'x31') {
-      x7 = 2
-    }
-    if (field == 'x32') {
-      x8 = 2
-    }
-    if (field == 'x33') {
-      x9 = 2
-    }
-    fillZero(element)
-    player = 1
-   
-   }
-   
-   var result = KO(x1,x2,x3,x4,x5,x6,x7,x8,x9)
- if (result == 'Крестики победили' || result == 'Нолики победили')  {
- alert (result)
- isend = true
- } else {
- if (x1 != 0 && x2 != 0 && x3 != 0 && x4 != 0 && x5 != 0 && x6 != 0 && x7 != 0 && x8 != 0 && x9 != 0 ) {
- alert ('Ничья')
- isend = true
-  }
- }
-
-}
-
-
-// Заполняет поле крестиком
-function fillCross(element) {
-  element.textContent = '×';
-}
-
-// Заполняет поле ноликом
-function fillZero(element) {
-  element.textContent = 'o';
-}
-
-</script>
+	<div>
+		<footer class="foot">
+			<div class="decblock deckblockpos8"></div>
+	
+			<p align=center id="headC">контакты</p>
+			<ol align=center>
+				<li><a href="https://t.me/sunofabeach17" target="_blank"><img src="images/telegram.png" height=96px class="animC cont"></a></li>
+				<li><a href="https://www.instagram.com/invites/contact/?i=1up7w9njimket&utm_content=i7twt0d" target="_blank"><img src="images/inst.png" height=96px class="animC cont"></a></li>
+				<li><a href="https://vk.com/sunofabeach17" target="_blank"><img src="images/vk.png" height=96px class="animC cont"></a></li>
+			</ol>
+			<ul>
+				<li>+7(987)750-98-08</li>
+				<li>ffn1k@yandex.ru</li>
+			</ul>
+			<p class="headAd">Россия, г.Нижний Новгород,<br> пр.Гагарина д.1 к.82</p>
+			<img src="images/dlogo.png" class="next_overlays3">
+		</footer>
+	</div>
+</html>
