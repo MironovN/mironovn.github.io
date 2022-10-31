@@ -28,8 +28,8 @@ body{
     		position: relative;
 		left: 0;
 		top: 10%;
-		height: 3vw;
-		width: 3vw;
+		height: max(40px, 3vw);
+		width: max(40px, 3vw);
     		}
 	
 	.next_overlays3 {
