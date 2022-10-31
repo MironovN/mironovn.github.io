@@ -149,31 +149,31 @@ body{
 		}
 	
 	.block3{
-		height: max(280px, 35vh);
-		width: max(700px, 55vw);
+		height: 30%;
+		width: 10%;
 		border-radius: 10vw;
 		background: radial-gradient(circle at 40px 30px, #1d1d1b, #3A4235);
 		margin-left: 10vw;
 		margin-right: 40px;}
 	
 	.block3 img{
-		height: max(280px, 35vh);
-		width: max(700px, 55vw);
+		height: 30%;
+		width: 10%;
 		position: relative;
 		top: -1vh;
 		margin: 0;}
 	
 	.block4{
-		height: 35vh;
-		width: 55vw;
+		height: 30%;
+		width: 10%;
 		border-radius: 10vw;
 		background: radial-gradient(circle at 40px 30px, #1d1d1b, #3A4235);
 		margin-left: 30vw;
 		margin-right: 40px;}
 	
 	.block4 img{
-		height: max(280px, 35vh);
-		width: max(700px, 55vw);
+		height: 30%;
+		width: 10%;
 		position: relative;
 		top: -3vh;
 		margin: 0;}
