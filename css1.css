@@ -157,7 +157,8 @@ body{
 		margin-right: 40px;}
 	
 	.block3 img{
-		width: 55vw;
+		height: max(280px, 35vh);
+		width: max(700px, 55vw);
 		position: relative;
 		top: -1vh;
 		margin: 0;}
@@ -171,7 +172,8 @@ body{
 		margin-right: 40px;}
 	
 	.block4 img{
-		width: 55vw;
+		height: max(280px, 35vh);
+		width: max(700px, 55vw);
 		position: relative;
 		top: -3vh;
 		margin: 0;}
