@@ -3,7 +3,50 @@
 		padding; 0px;
 		background-color: white;
 		overflow-x: hidden;
-		height: 1080px}
+		height: 1080px;
+		font-family: Century Gothic;}
+	
+	button{
+		font-family: Century Gothic;}
+		
+	header{
+		position: fixed;
+		top: 0.03vh;
+		z-index:10000;
+		width: 98.9vw;
+		font-size: min(16pt, 2vh);
+		height: 5vh;
+		border-radius: 100px;
+		background-color: #1d1d1b;
+		margin-bottom: 0;
+		margin-left: 0;}
+	
+	.disp{
+		margin: 0;}
+
+	.disp button{
+		color: white;
+		border: none;
+    		background: none;
+		padding: 0;
+		margin: 0;
+		vertical-align: middle;
+		font-size: min(16pt, 2vh);
+		margin-top: 0.2vh;
+		font-weight: 0;
+		max-height: 40px;
+		min-height: 5px;
+		}
+	
+	.disp li{
+		vertical-align: middle;
+		display: inline;
+		margin-right: 6vw;
+		max-height: 40px;
+		min-height: 5px;}
+	
+	.disp a{
+		vertical-align: middle;}
 	
 	#map{	
 		position: relative;
@@ -17,7 +60,7 @@
 	#scroll_bottom1 {
 		position: relative;
 		left: 49%;
-		bottom: 10vh;
+		bottom: 20vh;
 		width: 3vw;
 		height: 3vw;
 		z-index: 10;
@@ -28,14 +71,14 @@
     		position: relative;
 		left: 0;
 		top: 10%;
-		height: 64px;
-		width: 64px;
+		height: 4vw;
+		width: 4vw;
     		}
 	
 	.next_overlays3 {
     		position: relative;
-		left: 42%;
-		top: -37%;
+		left: 42vw;
+		top: -37vh;
 		width: 15vw;
     		}
 	
@@ -46,7 +89,6 @@
 		margin-bottom: 7vh;
 		font-size: 5vw;
 		font-weight: bold;
-		font-family: Century Gothic;
 		color: #1d1d1b;
 		text-align: center;
 		position: relative;
@@ -61,8 +103,7 @@
 		margin-left: 3vw;
 		margin-bottom: 0;
 		font-size: 7vw;
-		font-weight: bold;
-		font-family: Century Gothic;
+		font-weight: 1000;
 		color: #a79aff;
 		text-align: left;}
 	
@@ -73,7 +114,6 @@
 		margin-bottom: 0;
 		font-size: 3vw;
 		font-weight: bold;
-		font-family: Century Gothic;
 		color: white;
 		border-radius: 5vw;
 		background: #a79aff;}
@@ -82,12 +122,13 @@
 		margin-top: 0px;
 		margin-bottom: 0px;
 		vertical-align: middle;
-		margin-left: -20px;
-		width: 100vw;
-		height: 50vh;
+		margin-left: -15vw;
+		width: 500vw;
+		height: 60vh;
+		max-height: 330px;
 		border: dashed;
 		border-color: white;
-		border-width: 20px;
+		border-width: 1vw;
 		text-align: left;
 		background: #1d1d1d;}
 	
@@ -110,7 +151,9 @@
 		background: #1d1d1d;}
 	
 	#gall img{
-		width: 21.5vw;
+		height: 60vh;
+		max-height: 250px;
+		min-height: 20px;
 		border: dashed;
 		border-color: #a79aff;
 		border-radius: 3px;
@@ -123,67 +166,82 @@
 		}
 	
 	#gall ol{
-		margin-left: 1vw;
+		margin-left: 12vw;
 		margin-top: 2vh;
 		vertical-align: middle;
 		}
 	
 	.blockA{
 		height: 90vh;
+		min-height: 100px;
+		margin-top: 5vh;
 		}
 	
-	.blockV{
-		width: 100vw;
-  		border-radius: 100vw;}
-	
 	.blockT{
-		margin-top: 0px;
+		margin-top: 0vh;
 		margin-bottom: 3.5vh;
-		margin-left: 10vw;
-		margin-right: 0px;
+		margin-left: 20vw;
+		margin-right: 15vw;
 		font-size: 6vw;
-		font-family: Century Gothic;
 		color: #1d1d1b;
 		text-align: left;
 		height: 90vh;
+		max-width: 70vw;
 		}
 	
-	.blockP{
-  		padding: 10px;
+	.blockP1{
+  		padding: 0;
+  		overflow: none;
+		width: 98vw;
+		min-height: 60vh;}
+	
+	.blockP1 p{	
+		position: relative;
+		left: 47vw;
+		bottom: 5vh;
+		font-size: 2vw;
+		width: 50vw;
+		align: right;
+		color: #1d1d1d;}
+	
+	.blockP2{
+		position: absolute;
+		top: 255vh;
+		left: 26vw;
+  		padding: 0;
   		background: none;
-  		overflow: auto;
+  		overflow: none;
 		width: 100vw;
-		margin-bottom: 0;}
+		height: 40vh;}
 	
-	.block3{
-		border-radius: 10vw;
-		background: radial-gradient(circle at 40px 30px, #1d1d1b, #3A4235);
-		margin-left: 10vw;
-		margin-right: 40px;
-		width: 60vw;
-		padding-bottom: 17%;}
+	summary {
+  		list-style-type: none;
+		}
 	
-	.block3 img{
-		width: 100%;
+	#img1{
+		align: left;
 		position: relative;
-		object-fit: cover;
-		top: -2vh;
-		margin: 0;}
+		left: -55vw;
+		width: 36%;
+		display: block;
+		vertical-align: top;
+		transition: 800ms;}
 	
-	.block4{
-		border-radius: 10vw;
-		background: radial-gradient(circle at 40px 30px, #1d1d1b, #3A4235);
-		margin-left: 30vw;
-		margin-right: 40px;
-		width: 60vw;
-		padding-bottom: 17%;}
+	#img1:hover{
+		width: 38%;
+		transition: 800ms;}
 	
-	.block4 img{
-		width: 100%;
+	#img3{
+		width: 14%;
 		position: relative;
-		top: -2vh;
-		object-fit: cover;
-		margin: 0;}
+		right: 10vw;
+		bottom: 2.4vh;
+		transition: 800ms;}
+	
+	#img3:hover{
+		width: 16%;
+		transition: 800ms;
+		border-radius: 44%;}
 
 
 	a{
@@ -196,7 +254,6 @@
 		color: #1d1d1b;
 		font-size: 6vw;
 		background: #a79aff;
-		font-family: Century Gothic;
 		font-weight: bold;}
 	
 	.txtm a{
@@ -205,46 +262,11 @@
 		color: #1d1d1b;
 		font-size: 6vw;
 		background: #a79aff;
-		font-family: Century Gothic;
 		font-weight: bold;}
 	
 	.txtB:hover{
-		background: linear-gradient(to right, #a79aff, #714ab7);}
-
-	.disp{
-		height: 40px;
-		border: solid;
-		border-radius: 100px;
-		border-color: #1d1d1b;
-		background-color: #1d1d1b;
-		margin-bottom: 0;
-		margin-top: 5px;
-		margin-left: 0;
-		font-size: max(17px, 1vw);
-		position: sticky;
-		top: 10px;
-		font-family: Century Gothic;
-		vertical-align: middle;
-		}	
+		background: linear-gradient(to right, #a79aff, #714ab7);}	
 	
-	.disp button{
-		color: white;
-		background: tarnsparent;
-		border: none;
-		font-size: 2.5vh;
-    		background: none;
-		font-family: Century Gothic;
-		vertical-align: middle;
-		height: 40px;
-		}
-	
-	.disp li{
-		vertical-align: middle;
-		display: inline;
-		font-size: 2.5vh;
-		margin-right: 6vw;
-		margin-top: 10px;
-		height: 40px;}
 
 	.animB:hover {
 		color: #a79aff;
@@ -261,16 +283,16 @@
 	
 	video{
 		width: 99vw;
-		position: relative;
-		top: 0;
-    		border-radius: 1.7vw 1.7vw 0 0;
+    		border-radius: 2% 2% 0 0;
     		object-fit: fit;
+		margin-bottom: 5vh;
+		vertical-align: top;
 		}
 	
 	.imgA{
-		margin-top: 0.25vh;
-		height: 5vh;
-		max-height: 40px;
+		margin-top: 0.5vh;
+		max-height: 4vh;
+		min-height: 0px;
 		margin-left: 11vw;
 		margin-right: 11vw;
 		vertical-align: middle;	
@@ -278,7 +300,6 @@
 	
 	.foot{
 		width: 100vw;
-		height: 100vh;
 		margin-top: 30px;
 		background: #1d1d1b;
 		}
@@ -286,7 +307,6 @@
 	#headC{
 		font-size: 4vw;
 		color: white;
-		font-family: Century Gothic;
 		margin-bottom: 2vh;
 		margin-top: 3vh;
 		}
@@ -295,7 +315,6 @@
 		margin-left: 4vw;
 		margin-bottom: 0;
 		font-size: 1.5vw;
-		font-family: Century Gothic;
 		margin-top: 70px;
 		color: #a79aff;
 		}
@@ -306,7 +325,6 @@
 		width: 100%;
 		font-size: 1.5vw;
 		color: white;
-		font-family: Century Gothic;
 		}
 	
 	.foot ol{
