@@ -1,94 +1,95 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<style>
-			@import url(css1.css)
-		</style>
+		<link href="styles/css1.css" rel="stylesheet">
 		<title>HM: долгий и тернистый путь</title>
 		<link rel="shortcut icon" href="top.png" type="image/png">
 	</head>
 	
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
 	
 	<body>
 	
 	<header>
-		<ol class="disp" align="center"> 
-			<li><a href="gall.html" class="ButtonReady" style="margin-left: 1.5vw">ГАЛЛЕРЕЯ</a></li>
-  			<li><a href="https://github.com/MironovN/mironovn.github.io" title="Исходник" target="_blank" class="animB">КОД</a></li>
-			<li><a href=""> <img src=MainLogo.png class="imgA"> </a></li>
- 			<li><button onClick="cont()" class="animB">КОНТАКТЫ</button></li>
-  			<li><a href="" class="ButtonReady">ИНФОРМАЦИЯ</a></li>
-		</ol>
 	</header>
+
+	<nav>
+		<ol>
+			<li><a href="gall.html" class="ButtonReady" style="margin-left: 1.5vw">ГАЛЕРЕЯ</a></li>
+			<li><a href="https://github.com/MironovN/mironovn.github.io" title="Исходник" target="_blank" class="animB">КОД</a></li>
+			<li><a href=""> <img src=images/MainLogo.png class="imgA"> </a></li>
+			<li><a href="#foot" class="animB">КОНТАКТЫ</a></li>
+		  	<li><a href="info.html" class="ButtonReady">ИНФОРМАЦИЯ</a></li>
+		</ol>
+	</nav>
 
 	<div class="blockA">
 		<video autoplay loop muted frameborder="0">
 			<source src="2_123.mp4">
 		</video>
-		<input type="image" onClick="scrollButton1()" src="arrow.png" id="scroll_bottom1">
+		<a href="#blockT" ><img src="images/arrow.png" id="scroll_bottom1"></a>
 	</div>
 
-	<div class="blockT">
-		<p align=left class="txtm">
+	<div id="blockT">
+		<p align=left id="txtm">
+			<br>
 			<a href="" class="txtB">узнайте</a> обо мне,<br>
-			выходите на <button href="" onClick="cont()" class="txtB">связь</button>,<br>
-			изучите <button onClick="gall()" class="txtB">галлерею</button> моих работ,<br>
+			выходите на <a href="#foot" class="txtB">связь</a>,<br>
+			изучите <a href="#Gallery-block" class="txtB">галлерею</a> моих работ,<br>
 			сыграйте в <a class="txtB"https://github.com/MironovN/mironovn.github.io" target="_blank">игру</a>.
-			<input type="image" onClick="scrollButton2()" src="arrow1.png" id="scroll_bottom2"><br>
+			<a href="#partner"><img src="images/arrow1.png" id="scroll_bottom2"></a>
 		</p>
 	</div>
 
-	<p align="right" class="partner">организации</p>
-	<div class="blockP1">
-			<div>
-				<a href="https://vk.com/profkomngtu" target="_blank"><img id="img1" src="pb.png" align="right"><br>
+	<div id="partner">
+		<p align="right" class="partner">организации</p>
+		<div class="blockP1">
+				<a href="https://vk.com/profkomngtu" target="_blank" id="img1">
+					<img src="images/pb.png">
+				</a>
 				<p>Мы — <font style="color: #3caf77; font-weight: bold;">профсоюзная организация студентов НГТУ</font>! Мы всегда готовы <font style="color: #3caf77; font-weight: bold;">защитить твои права и интересы</font>. Для нас важно <font style="color: #3caf77; font-weight: bold;">улучшать качество обучения и помогать тебе в саморазвитии!</font></p>
-				</details>
-			</div>
-	</div>
-	
-	<div class="blockP2">
-			<div>
-				<a href="https://vk.com/profburo_irit" target="_blank"><img id="img1" src="pbi.png" align="right"></a><br>
-			</div>
-
+				<a href="https://vk.com/profburo_irit" target="_blank" id="img2"><img src="images/pbi.png"></a><br>
+		</div>
 	</div>
 
-
-	<p align=left class="gallery">галлерея</p>
-	<div id="gallM"></div>
-	<div id="gall">
-		<ol>
-			<li><img src="1.png"></li>
-			<li><img src="2.png"></li>
-			<li><img src="3.png"></li>
-			<li><img src="5.png"></li>
-			<li><img src="4.png"></li>
-			<li><img src="6.png"></li>
-		</ol>
-		<a href="gall.html" class="more txtB" align=right>больше</a>
+	<div id="Gallery-block">
+		<div class="gallery"><p align=left>галерея</p></div>
+		<div id="gall">
+			<ul>
+				<li><img src="images/1.png"></li>
+				<li><img src="images/2.png"></li>
+				<li><img src="images/3.png"></li>
+				<li><img src="images/6.png"></li>
+				<li><img src="images/7.png"></li>
+				<li><img src="images/8.png"></li>
+			</ul>
+			<a href="gall.html" class="more txtB" align=right>больше</a>
+		</div>
 	</div>
-	<div id="gallM1"></div>
 	</body>
 
-	<div>
-		<footer class="foot">
-			<p align=center id="headC">контакты</p>
+	<footer id="foot">
+		<p align=center id="headC">контакты</p>
+		<div id="icons">
 			<ol align=center>
-				<li><a href="https://t.me/sunofabeach17" target="_blank"><img src="telegram.png" class="animC cont"></a></li>
-				<li><a href="https://www.instagram.com/invites/contact/?i=1up7w9njimket&utm_content=i7twt0d" target="_blank"><img src="inst.png" class="animC cont"></a></li>
-				<li><a href="https://vk.com/sunofabeach17" target="_blank"><img src="vk.png" class="animC cont"></a></li>
+				<li><a href="https://t.me/sunofabeach17" target="_blank"><img src="images/telegram.png" class="animC cont"></a></li>
+				<li><a href="https://www.instagram.com/invites/contact/?i=1up7w9njimket&utm_content=i7twt0d" target="_blank"><img src="images/inst.png" class="animC cont"></a></li>
+				<li><a href="https://vk.com/sunofabeach17" target="_blank"><img src="images/vk.png" class="animC cont"></a></li>
 			</ol>
+		</div>
+		<div>
 			<ul>
 				<li>+7(987)750-98-08</li>
 				<li>ffn1k@yandex.ru</li>
 			</ul>
-			<p class="headAd">Россия, г.Нижний Новгород,<br> пр.Гагарина д.1 к.82</p>
-			<div id="map">
-				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1be8ba617beb25cea09e699e7b1397151984d18c6cea0636a65cb1cf15a498ad&amp;lang=ru_RU&amp;scroll=false"></script>
-			</div>
-			<img src="dlogo.png" class="next_overlays3">
-		</footer>
-	</div>
+		</div>
+		<div id="inf-block">
+			<ol>
+				<li class="headAd">Россия, г.Нижний Новгород,<br> 
+									пр.Гагарина д.1 к.82</li> 
+				<li><img src="images/dlogo.png" class="next_overlays3"></li>
+			</ol>
+			<div id="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1be8ba617beb25cea09e699e7b1397151984d18c6cea0636a65cb1cf15a498ad&amp;lang=ru_RU&amp;scroll=false"></script></div>
+		</div>
+	</footer>
 </html>
